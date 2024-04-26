@@ -1,6 +1,8 @@
 FROM ubuntu
 
-RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="Europe/Amsterdam" apt-get install -y ansible sshpass git python3-winrm
+RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="Europe/Amsterdam" apt-get install -y python3-pip sshpass git python3-winrm
+
+RUN pip3 install ansible
 
 WORKDIR /etc/ansible
 

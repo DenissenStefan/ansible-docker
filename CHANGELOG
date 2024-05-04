@@ -1,0 +1,32 @@
+## [Version 1.2.1] - 2024-05-04
+
+### Added
+
+- [Feature 2]: Added support for the following packages:
+    - python3-pip
+    - git
+    - python3-winrm
+    - jq
+    - curl
+    - sshpass
+- [Feature 3]: Added the following pip packages:
+    - ansible-lint
+    - passlib
+    - hvac
+    - lxml
+    - xmltodict
+    - jmespath
+- [Feature 4]: Added the following Ansible collections:
+    - community.hashi_vault
+    
+## [Version 1.1.1] - 2024-04-28
+
+### Changed
+
+- [Change 1]: Ansible is now the latest version.
+
+## [Version 1.1.0] - 2023-01-06
+
+### Added
+
+- [Feature 1]: Docker container to run Ansible from.

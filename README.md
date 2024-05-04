@@ -30,3 +30,7 @@ docker run -d \
   --restart unless-stopped \
   denissenstefan/ansible:v1
 ```
+
+# Use as a gitlab runner:
+
+When using this container as a gitlab runner, you need to add `chmod -v 700 $(pwd)` as a command to the runner, otherwise the runner will fail to run the playbook. This is because Ansible refuses to run playbooks in world-writable directories.
